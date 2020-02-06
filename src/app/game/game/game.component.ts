@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
-import * as Phaser from "phaser";
-import { HelloWorldSceneComponent } from "src/app/scenes/hello-world-scene/hello-world-scene.component";
+import * as Phaser from 'phaser';
+import { HelloWorldSceneComponent } from 'src/app/scenes/hello-world-scene/hello-world-scene.component';
 
 @Component({
-  selector: "app-game",
-  template: ""
+  selector: 'app-game',
+  template: ''
 })
 export class GameComponent implements OnInit {
   private readonly game: Phaser.Game;
@@ -16,7 +16,7 @@ export class GameComponent implements OnInit {
       width: 800,
       height: 600,
       physics: {
-        default: "arcade",
+        default: 'arcade',
         arcade: {
           gravity: { y: 300 },
           debug: false
