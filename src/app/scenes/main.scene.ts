@@ -1,14 +1,9 @@
-import { Component } from '@angular/core';
+import BaseScene from './base.scene';
+import { SceneKeys } from './sceneKeys';
 
-import BaseScene from '../base-scene.component';
-
-@Component({
-  selector: 'app-hello-world-scene',
-  template: ''
-})
-export class HelloWorldSceneComponent extends BaseScene {
+export default class MainScene extends BaseScene {
   constructor() {
-    super('HelloWorld');
+    super(SceneKeys.MainScene);
   }
 
   preload() {
